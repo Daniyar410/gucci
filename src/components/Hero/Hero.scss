@@ -1,0 +1,47 @@
+.hero {
+    background-color: #F2F0F1;
+}
+
+.hero__box {
+
+    h1 {
+        font-size: clamp(1rem, -0.158rem + 4.75vw, 4rem);
+
+    }
+
+    .box__description {
+        margin: 32px 0;
+    }
+
+    button {
+        padding: 15px 65px;
+
+        border-radius: 60px;
+        background-color: #000000;
+        color: #fff;
+
+        margin-bottom: 45px;
+    }
+}
+
+.hero__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+
+
+
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+    h3 {
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+}
