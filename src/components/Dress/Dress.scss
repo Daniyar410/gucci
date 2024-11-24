@@ -1,0 +1,46 @@
+.dress {
+    background: #F0F0F0;
+    border-radius: 40px;
+
+    margin: 50px 0;
+
+    h1 {
+        text-align: center;
+        font-size: 48px;
+        padding: 64px 0;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px 25px;
+        grid-template-areas:
+            "card-1 card-2 card-2"
+            "card-3 card-3 card-4";
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        padding-bottom: 50px;
+    }
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-4 {
+    grid-area: card-4;
+}

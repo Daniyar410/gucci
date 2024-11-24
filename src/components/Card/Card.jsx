@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.scss'
 
-const Card = ({image, name, stars, rate, price}) => {
+const Card = ({image, name, stars, rate, price, }) => {
     return (
         <>
             <div className="card">
@@ -14,6 +14,8 @@ const Card = ({image, name, stars, rate, price}) => {
 
                 <b>${price}</b>
             </div>
+
+
         </>
     )
 }

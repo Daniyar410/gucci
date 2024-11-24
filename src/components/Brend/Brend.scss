@@ -1,0 +1,13 @@
+.brend{
+    background: #000;
+
+    &__img{
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        padding: 43px 0;
+
+    } 
+}

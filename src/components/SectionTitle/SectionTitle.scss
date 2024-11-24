@@ -1,6 +1,16 @@
-.section-title{
+.section-title {
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
     color: #000;
+}
+.section__img{
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
