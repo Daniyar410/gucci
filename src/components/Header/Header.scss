@@ -95,3 +95,50 @@ header {
         background-color: black;
     }
 }
+
+.dropdown {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+
+    &:hover {
+        div {
+            opacity: 1;
+            visibility: visible;
+            
+        }
+
+        img{
+            rotate: 180deg;
+        }
+    
+    }
+
+    img {
+        width: 20px;
+        transition: 0.4s;
+    }
+
+    div {
+        top: 25px;
+        right: 0;
+        position: absolute;
+        background-color: #F0F0F0;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+
+        a {
+            border-bottom: 1px solid gray;
+            padding: 4px;
+            font-size: 18px;
+        }
+    }
+}
