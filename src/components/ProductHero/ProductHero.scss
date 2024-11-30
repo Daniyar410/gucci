@@ -1,0 +1,32 @@
+.product__wrap{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
+}
+
+.product__image{
+
+    img{
+        width: 100%;
+    }
+}
+
+.product__box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__price{
+        font-size: 28px;
+
+        s{
+            color: gray;
+            font-size: 24px;
+        }
+    }
+}

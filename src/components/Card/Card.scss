@@ -1,20 +1,24 @@
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 8px;
 
-    h3{
+    h3 {
         margin-top: 8px;
     }
 
-    img{
+    img {
         width: 100%;
         border-radius: 20px;
+
+        aspect-ratio: 1/1.4;
+        object-fit: cover;
     }
 }
 
-.card-rating{
+.card-rating {
     display: flex;
     align-items: center;
-    gap: 10px;line-height: 1;
+    gap: 10px;
+    line-height: 1;
 }
