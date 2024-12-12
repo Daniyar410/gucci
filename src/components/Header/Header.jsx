@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import './Header.scss'
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context'
 
 const Header = () => {
-    const [isActive, setIsActive] = useState(false)
 
-    const tooggleBurger = () => {
-        setIsActive(!isActive)
-    }
+    const { isActive, tooggleBurger, user, isAuth, logout } = useAppContext()
 
     const closeBurger = () => {
         setIsActive(false)
     }
+
     return (
         <>
             <header>
@@ -42,7 +41,20 @@ const Header = () => {
                         <input placeholder='Search for products...' type="text" />
                         <div>
                             <img src="/korzinka.svg" alt="" />
-                            <img src="/provil.svg" alt="" />
+
+                            {isAuth ? (
+                                <div>
+                                    <b>{user.username}</b> <br />
+                                    <button onClick={logout}>logout</button>
+                                </div>
+                            ) : (
+
+                                <Link to={'/login'}>
+                                    <img src="/provil.svg" alt="" />
+                                </Link>
+
+                            )}
+
                         </div>
 
                         <div onClick={tooggleBurger} className={`burger ${isActive ? 'active' : ''}`}>

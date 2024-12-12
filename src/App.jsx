@@ -7,6 +7,9 @@ import Contacts from './pages/Contacts'
 import Header from './components/Header/Header'
 import Sale from './pages/Sale'
 import SingelPage from './pages/SingelPage'
+import SingupPage from './pages/SingupPage'
+import LoginPage from './pages/LoginPage'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -19,7 +22,12 @@ const App = () => {
         <Route path='/blog' element={<Blog />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/product/:id' element={<SingelPage />} />
+        <Route path='/signup' element={<SingupPage />} />
+        <Route path='/login' element={<LoginPage />} />
+        
       </Routes>
+
+      <Footer/>
 
     </>
   )

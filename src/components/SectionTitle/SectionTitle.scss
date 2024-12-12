@@ -3,6 +3,10 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #000;
+
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
 }
 .section__img{
     display: flex;

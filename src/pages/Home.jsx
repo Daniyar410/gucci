@@ -5,6 +5,7 @@ import Category from '../components/Category/Category'
 import Dress from '../components/Dress/Dress'
 import Brend from '../components/Brend/Brend'
 import Comet from '../components/Comet/Comet'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     <Category/>
     <Dress/>
     <Comet/>
+    <Footer/>
     </>
     )
 }

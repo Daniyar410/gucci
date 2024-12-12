@@ -13,11 +13,38 @@ h1 {
     margin: 0 auto;
     padding: 0 15px;
 
-    p{
+    p {
         color: #00000099;
     }
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+.login-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    a{
+        color: black;
+        text-align: center;
+        
+    }
 }
