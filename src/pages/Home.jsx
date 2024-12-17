@@ -16,7 +16,6 @@ const Home = () => {
     <Category/>
     <Dress/>
     <Comet/>
-    <Footer/>
     </>
     )
 }
